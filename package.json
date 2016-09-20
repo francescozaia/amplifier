@@ -1,0 +1,28 @@
+{
+  "name": "Amplifier",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "oldstart": "node ./bin/www",
+    "dev": "nodemon --exec babel-node ./src/main.js",
+    "build": "babel ./src --out-dir ./dist",
+    "start": "npm run build && node ./dist/main.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "eslint": "^3.5.0",
+    "eslint-config-google": "^0.6.0",
+    "nodemon": "^1.10.2",
+    "pdfkit": "^0.8.0"
+  }
+}
